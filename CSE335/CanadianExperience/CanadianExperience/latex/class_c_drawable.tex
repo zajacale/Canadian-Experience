@@ -1,0 +1,274 @@
+\hypertarget{class_c_drawable}{}\section{C\+Drawable Class Reference}
+\label{class_c_drawable}\index{C\+Drawable@{C\+Drawable}}
+
+
+{\ttfamily \#include $<$Drawable.\+h$>$}
+
+Inheritance diagram for C\+Drawable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_drawable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_drawable_a58fd1036856d627b19976088e4143630}{$\sim$\+C\+Drawable} ()
+\item 
+\hyperlink{class_c_drawable_abd46d61baf3d5f5210aa3c66b98d9263}{C\+Drawable} ()=delete
+\item 
+\hyperlink{class_c_drawable_abec99c088c1a7c12e1d7ecae69135602}{C\+Drawable} (const \hyperlink{class_c_drawable}{C\+Drawable} \&)=delete
+\item 
+void \hyperlink{class_c_drawable_aabd5f52b903e57a4c8b145cb69158adb}{operator=} (const \hyperlink{class_c_drawable}{C\+Drawable} \&)=delete
+\item 
+void \hyperlink{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}{Set\+Actor} (\hyperlink{class_c_actor}{C\+Actor} $\ast$actor)
+\item 
+\hypertarget{class_c_drawable_a9b6a9920a75d88d9ae321997495eaec7}{}virtual void {\bfseries Draw} (Gdiplus\+::\+Graphics $\ast$graphics)=0\label{class_c_drawable_a9b6a9920a75d88d9ae321997495eaec7}
+
+\item 
+void \hyperlink{class_c_drawable_ac154be14313b739471d3a1529a2b31b5}{Place} (Gdiplus\+::\+Point offset, double rotate)
+\item 
+void \hyperlink{class_c_drawable_ab636167462699dde9b80e6dcb08caf7c}{Add\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_drawable}{C\+Drawable} $>$ child)
+\item 
+\hypertarget{class_c_drawable_af715bc2e79788b2a44a74ad70b181544}{}virtual bool {\bfseries Hit\+Test} (Gdiplus\+::\+Point pos)=0\label{class_c_drawable_af715bc2e79788b2a44a74ad70b181544}
+
+\item 
+\hypertarget{class_c_drawable_ac9f03cfc58aed75fb52cd69c71e7b6e0}{}virtual bool {\bfseries Is\+Movable} ()\label{class_c_drawable_ac9f03cfc58aed75fb52cd69c71e7b6e0}
+
+\item 
+void \hyperlink{class_c_drawable_a2241b02a5f50c7a455283a9fb24d5b27}{Move} (Gdiplus\+::\+Point delta)
+\item 
+void \hyperlink{class_c_drawable_aa6b8988df847a76c30dfcf525ab65449}{Set\+Position} (Gdiplus\+::\+Point pos)
+\item 
+Gdiplus\+::\+Point \hyperlink{class_c_drawable_ac1def1d34d8069e3985e3a423ba80f2d}{Get\+Position} () const 
+\item 
+void \hyperlink{class_c_drawable_ab1191ba99b869690839ff20cd0cc45c4}{Set\+Rotation} (double r)
+\item 
+double \hyperlink{class_c_drawable_afb31912cfe47cc336dfbef384181ca65}{Get\+Rotation} () const 
+\item 
+std\+::wstring \hyperlink{class_c_drawable_a45af045c285cd0be9340a9a0d9883260}{Get\+Name} () const 
+\item 
+void \hyperlink{class_c_drawable_ad53fc2430248f2ac022ab142024df983}{Set\+Parent} (\hyperlink{class_c_drawable}{C\+Drawable} $\ast$parent)
+\item 
+\hyperlink{class_c_drawable}{C\+Drawable} $\ast$ \hyperlink{class_c_drawable_a7f71959d8c597e34abb395b6dece5ad6}{Get\+Parent} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_drawable_a2e153d7fd3a752139b0b87ea990a25fc}{C\+Drawable} (const std\+::wstring \&name)
+\item 
+Gdiplus\+::\+Point \hyperlink{class_c_drawable_aabf32ebc32a2dbe928bc9fa38bd82535}{Rotate\+Point} (Gdiplus\+::\+Point point, double angle)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_drawable_abafce2c99898aac71bdb99ec2031d3a5}{}Gdiplus\+::\+Point \hyperlink{class_c_drawable_abafce2c99898aac71bdb99ec2031d3a5}{m\+Placed\+Position} = Gdiplus\+::\+Point(0, 0)\label{class_c_drawable_abafce2c99898aac71bdb99ec2031d3a5}
+
+\begin{DoxyCompactList}\small\item\em The actual postion in the drawing. \end{DoxyCompactList}\item 
+\hypertarget{class_c_drawable_a3b280b16b1a4a8c6e2588b1dc5574bda}{}double \hyperlink{class_c_drawable_a3b280b16b1a4a8c6e2588b1dc5574bda}{m\+Placed\+R} = 0\label{class_c_drawable_a3b280b16b1a4a8c6e2588b1dc5574bda}
+
+\begin{DoxyCompactList}\small\item\em The actual rotation in the drawing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for drawable elements of our picture.
+
+A drawable is one part of an actor. Drawable parts can be moved independently. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_drawable_a58fd1036856d627b19976088e4143630}{}\index{C\+Drawable@{C\+Drawable}!````~C\+Drawable@{$\sim$\+C\+Drawable}}
+\index{````~C\+Drawable@{$\sim$\+C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{$\sim$\+C\+Drawable()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Drawable\+::$\sim$\+C\+Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_drawable_a58fd1036856d627b19976088e4143630}
+Destructor \hypertarget{class_c_drawable_abd46d61baf3d5f5210aa3c66b98d9263}{}\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{C\+Drawable()=delete}]{\setlength{\rightskip}{0pt plus 5cm}C\+Drawable\+::\+C\+Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\label{class_c_drawable_abd46d61baf3d5f5210aa3c66b98d9263}
+Default constructor disabled \hypertarget{class_c_drawable_abec99c088c1a7c12e1d7ecae69135602}{}\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{C\+Drawable(const C\+Drawable \&)=delete}]{\setlength{\rightskip}{0pt plus 5cm}C\+Drawable\+::\+C\+Drawable (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Drawable} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\label{class_c_drawable_abec99c088c1a7c12e1d7ecae69135602}
+Copy constructor disabled \hypertarget{class_c_drawable_a2e153d7fd3a752139b0b87ea990a25fc}{}\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\index{C\+Drawable@{C\+Drawable}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{C\+Drawable(const std\+::wstring \&name)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Drawable\+::\+C\+Drawable (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_drawable_a2e153d7fd3a752139b0b87ea990a25fc}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & The drawable name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_drawable_ab636167462699dde9b80e6dcb08caf7c}{}\index{C\+Drawable@{C\+Drawable}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Add\+Child(std\+::shared\+\_\+ptr$<$ C\+Drawable $>$ child)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Add\+Child (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Drawable} $>$}]{child}
+\end{DoxyParamCaption}
+)}\label{class_c_drawable_ab636167462699dde9b80e6dcb08caf7c}
+Add a child drawable to this drawable 
+\begin{DoxyParams}{Parameters}
+{\em child} & The child to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_a45af045c285cd0be9340a9a0d9883260}{}\index{C\+Drawable@{C\+Drawable}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Get\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Drawable\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_a45af045c285cd0be9340a9a0d9883260}
+Get the drawable name \begin{DoxyReturn}{Returns}
+The drawable name 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_a7f71959d8c597e34abb395b6dece5ad6}{}\index{C\+Drawable@{C\+Drawable}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Get\+Parent()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Drawable}$\ast$ C\+Drawable\+::\+Get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_a7f71959d8c597e34abb395b6dece5ad6}
+Gets the parent of the child \begin{DoxyReturn}{Returns}
+The parent of the child 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_ac1def1d34d8069e3985e3a423ba80f2d}{}\index{C\+Drawable@{C\+Drawable}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Get\+Position() const }]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Drawable\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_ac1def1d34d8069e3985e3a423ba80f2d}
+Get the drawable position \begin{DoxyReturn}{Returns}
+The drawable position 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_afb31912cfe47cc336dfbef384181ca65}{}\index{C\+Drawable@{C\+Drawable}!Get\+Rotation@{Get\+Rotation}}
+\index{Get\+Rotation@{Get\+Rotation}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Get\+Rotation() const }]{\setlength{\rightskip}{0pt plus 5cm}double C\+Drawable\+::\+Get\+Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_afb31912cfe47cc336dfbef384181ca65}
+Get the rotation angle in radians \begin{DoxyReturn}{Returns}
+The rotation angle in radians 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_a2241b02a5f50c7a455283a9fb24d5b27}{}\index{C\+Drawable@{C\+Drawable}!Move@{Move}}
+\index{Move@{Move}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Move(\+Gdiplus\+::\+Point delta)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Move (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{delta}
+\end{DoxyParamCaption}
+)}\label{class_c_drawable_a2241b02a5f50c7a455283a9fb24d5b27}
+Move this drawable some amount 
+\begin{DoxyParams}{Parameters}
+{\em delta} & The amount to move \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_aabd5f52b903e57a4c8b145cb69158adb}{}\index{C\+Drawable@{C\+Drawable}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{operator=(const C\+Drawable \&)=delete}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Drawable} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\label{class_c_drawable_aabd5f52b903e57a4c8b145cb69158adb}
+Assignment operator disabled \hypertarget{class_c_drawable_ac154be14313b739471d3a1529a2b31b5}{}\index{C\+Drawable@{C\+Drawable}!Place@{Place}}
+\index{Place@{Place}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Place(\+Gdiplus\+::\+Point offset, double rotate)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Place (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{offset, }
+\item[{double}]{rotate}
+\end{DoxyParamCaption}
+)}\label{class_c_drawable_ac154be14313b739471d3a1529a2b31b5}
+Place this drawable relative to its parent
+
+This works hierarchically from top item down. 
+\begin{DoxyParams}{Parameters}
+{\em offset} & Parent offset \\
+\hline
+{\em rotate} & Parent rotation \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_aabf32ebc32a2dbe928bc9fa38bd82535}{}\index{C\+Drawable@{C\+Drawable}!Rotate\+Point@{Rotate\+Point}}
+\index{Rotate\+Point@{Rotate\+Point}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Rotate\+Point(\+Gdiplus\+::\+Point point, double angle)}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Drawable\+::\+Rotate\+Point (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{point, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_drawable_aabf32ebc32a2dbe928bc9fa38bd82535}
+Rotate a point by a given angle. 
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to rotate \\
+\hline
+{\em angle} & An angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rotated point 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}{}\index{C\+Drawable@{C\+Drawable}!Set\+Actor@{Set\+Actor}}
+\index{Set\+Actor@{Set\+Actor}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Set\+Actor(\+C\+Actor $\ast$actor)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Set\+Actor (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Actor} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)}\label{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}
+Set the actor using this drawable 
+\begin{DoxyParams}{Parameters}
+{\em actor} & Actor using this drawable \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_ad53fc2430248f2ac022ab142024df983}{}\index{C\+Drawable@{C\+Drawable}!Set\+Parent@{Set\+Parent}}
+\index{Set\+Parent@{Set\+Parent}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Set\+Parent(\+C\+Drawable $\ast$parent)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Drawable} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_ad53fc2430248f2ac022ab142024df983}
+Set the parent of the child 
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent of the child \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_aa6b8988df847a76c30dfcf525ab65449}{}\index{C\+Drawable@{C\+Drawable}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Set\+Position(\+Gdiplus\+::\+Point pos)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_aa6b8988df847a76c30dfcf525ab65449}
+Set the drawable position 
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new drawable position \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_drawable_ab1191ba99b869690839ff20cd0cc45c4}{}\index{C\+Drawable@{C\+Drawable}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!C\+Drawable@{C\+Drawable}}
+\subsubsection[{Set\+Rotation(double r)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Drawable\+::\+Set\+Rotation (
+\begin{DoxyParamCaption}
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_drawable_ab1191ba99b869690839ff20cd0cc45c4}
+Set the rotation angle in radians 
+\begin{DoxyParams}{Parameters}
+{\em r} & The new rotation angle in radians \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_drawable_8h}{Drawable.\+h}\item 
+\hyperlink{_drawable_8cpp}{Drawable.\+cpp}\end{DoxyCompactItemize}

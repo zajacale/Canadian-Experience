@@ -1,0 +1,53 @@
+﻿Build started 3/24/2016 10:47:31 AM.
+     1>Project "C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\CanadianExperience\CanadianExperience.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\CanadianExperience.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\CanadianExperience.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Actor.cpp ActorFactory.cpp CanadianExperience.cpp Drawable.cpp HaroldFactory.cpp HeadTop.cpp ImageDrawable.cpp LarryFactory.cpp MainFrm.cpp Picture.cpp PictureFactory.cpp PictureObserver.cpp PolyDrawable.cpp ViewActors.cpp ViewEdit.cpp ViewTimeline.cpp ViewTop.cpp
+         ViewTop.cpp
+         ViewTimeline.cpp
+         ViewEdit.cpp
+         ViewActors.cpp
+         PolyDrawable.cpp
+         PictureObserver.cpp
+         PictureFactory.cpp
+         Picture.cpp
+         MainFrm.cpp
+         LarryFactory.cpp
+         ImageDrawable.cpp
+         HeadTop.cpp
+     1>c:\users\zajac\documents\visual studio 2013\projects\cse335\step5\canadianexperience\canadianexperience\headtop.cpp(93): warning C4244: 'argument' : conversion from 'INT' to 'Gdiplus::REAL', possible loss of data
+         HaroldFactory.cpp
+         Drawable.cpp
+         CanadianExperience.cpp
+         ActorFactory.cpp
+         Actor.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\CanadianExperience.res" CanadianExperience.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\Debug\CanadianExperience.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\Debug\CanadianExperience.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\Debug\CanadianExperience.lib" /MACHINE:X86 Debug\CanadianExperience.res
+         Debug\Actor.obj
+         Debug\ActorFactory.obj
+         Debug\CanadianExperience.obj
+         Debug\Drawable.obj
+         Debug\HaroldFactory.obj
+         Debug\HeadTop.obj
+         Debug\ImageDrawable.obj
+         Debug\LarryFactory.obj
+         Debug\MainFrm.obj
+         Debug\Picture.obj
+         Debug\PictureFactory.obj
+         Debug\PictureObserver.obj
+         Debug\PolyDrawable.obj
+         Debug\stdafx.obj
+         Debug\ViewActors.obj
+         Debug\ViewEdit.obj
+         Debug\ViewTimeline.obj
+         Debug\ViewTop.obj
+         CanadianExperience.vcxproj -> C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\Debug\CanadianExperience.exe
+     1>Done Building Project "C:\Users\Zajac\Documents\Visual Studio 2013\Projects\CSE335\Step5\CanadianExperience\CanadianExperience\CanadianExperience.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:29.36

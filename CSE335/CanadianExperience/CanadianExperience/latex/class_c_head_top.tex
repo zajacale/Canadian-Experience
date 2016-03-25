@@ -1,0 +1,136 @@
+\hypertarget{class_c_head_top}{}\section{C\+Head\+Top Class Reference}
+\label{class_c_head_top}\index{C\+Head\+Top@{C\+Head\+Top}}
+Inheritance diagram for C\+Head\+Top\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_head_top}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{C\+Head\+Top} (const std\+::wstring \&name, const std\+::wstring \&filename)
+\item 
+\hypertarget{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{}\hyperlink{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{C\+Head\+Top} ()=delete\label{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{}\hyperlink{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{C\+Head\+Top} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete\label{class_c_head_top_a574b5950dff9f90de01219437f475cb9}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor (Disabled) \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a9200b99a963f22b4ff4b369a09e47777}{}\hyperlink{class_c_head_top}{C\+Head\+Top} \& \hyperlink{class_c_head_top_a9200b99a963f22b4ff4b369a09e47777}{operator=} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete\label{class_c_head_top_a9200b99a963f22b4ff4b369a09e47777}
+
+\begin{DoxyCompactList}\small\item\em Assignment Operator (Disabled) \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{$\sim$\+C\+Head\+Top} ()
+\item 
+void \hyperlink{class_c_head_top_a70b7eec7548917c0e11aa5f38137daa9}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\item 
+\hypertarget{class_c_head_top_a62795abc9ca781cca83c43bbf7f44a9a}{}virtual bool {\bfseries Is\+Movable} () override\label{class_c_head_top_a62795abc9ca781cca83c43bbf7f44a9a}
+
+\item 
+Gdiplus\+::\+Point \hyperlink{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}{Transform\+Point} (Gdiplus\+::\+Point p)
+\item 
+void \hyperlink{class_c_head_top_aac91ed41a63e98abd4aa3c4c02cfaedb}{Draw\+Eyebrow} (Point p1, Point p2, Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \hyperlink{class_c_head_top_a864f2297a9dd3c47390bf554d5f3bb1d}{Draw\+Eye} (Point p1, Gdiplus\+::\+Graphics $\ast$graphics)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{}\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{C\+Head\+Top(const std\+::wstring \&name, const std\+::wstring \&filename)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}\label{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & The drawable name \\
+\hline
+{\em filename} & The filename for the image \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{}\index{C\+Head\+Top@{C\+Head\+Top}!````~C\+Head\+Top@{$\sim$\+C\+Head\+Top}}
+\index{````~C\+Head\+Top@{$\sim$\+C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{$\sim$\+C\+Head\+Top()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::$\sim$\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_head_top_a70b7eec7548917c0e11aa5f38137daa9}{}\index{C\+Head\+Top@{C\+Head\+Top}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw(\+Gdiplus\+::\+Graphics $\ast$graphics) override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_head_top_a70b7eec7548917c0e11aa5f38137daa9}
+Draw the head top drawable 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics context to draw on \\
+\hline
+\end{DoxyParams}
+Calls the original verison 
+
+Implements \hyperlink{class_c_drawable}{C\+Drawable}.
+
+\hypertarget{class_c_head_top_a864f2297a9dd3c47390bf554d5f3bb1d}{}\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eye@{Draw\+Eye}}
+\index{Draw\+Eye@{Draw\+Eye}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eye(\+Point p1, Gdiplus\+::\+Graphics $\ast$graphics)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eye (
+\begin{DoxyParamCaption}
+\item[{Point}]{p1, }
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)}\label{class_c_head_top_a864f2297a9dd3c47390bf554d5f3bb1d}
+Draws the eyebrow onto Head Top 
+\begin{DoxyParams}{Parameters}
+{\em p1} & Point to start \\
+\hline
+{\em p2} & Point to finish \\
+\hline
+{\em graphics} & Graphics context to draw on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_aac91ed41a63e98abd4aa3c4c02cfaedb}{}\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eyebrow@{Draw\+Eyebrow}}
+\index{Draw\+Eyebrow@{Draw\+Eyebrow}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eyebrow(\+Point p1, Point p2, Gdiplus\+::\+Graphics $\ast$graphics)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eyebrow (
+\begin{DoxyParamCaption}
+\item[{Point}]{p1, }
+\item[{Point}]{p2, }
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)}\label{class_c_head_top_aac91ed41a63e98abd4aa3c4c02cfaedb}
+Draws the eyebrow onto Head Top 
+\begin{DoxyParams}{Parameters}
+{\em p1} & Point to start \\
+\hline
+{\em p2} & Point to finish \\
+\hline
+{\em graphics} & Graphics context to draw on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}{}\index{C\+Head\+Top@{C\+Head\+Top}!Transform\+Point@{Transform\+Point}}
+\index{Transform\+Point@{Transform\+Point}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Transform\+Point(\+Gdiplus\+::\+Point p)}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Head\+Top\+::\+Transform\+Point (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{p}
+\end{DoxyParamCaption}
+)}\label{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}
+Transform a point from a location on the bitmap to a location on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_head_top_8h}{Head\+Top.\+h}\item 
+\hyperlink{_head_top_8cpp}{Head\+Top.\+cpp}\end{DoxyCompactItemize}

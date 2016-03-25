@@ -1,0 +1,74 @@
+\hypertarget{class_c_picture_1_1_actor_iter}{}\section{C\+Picture\+:\+:Actor\+Iter Class Reference}
+\label{class_c_picture_1_1_actor_iter}\index{C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}}
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}{Actor\+Iter} (\hyperlink{class_c_picture}{C\+Picture} $\ast$picture, int pos)
+\item 
+bool \hyperlink{class_c_picture_1_1_actor_iter_a68cc04a07bd5766b1d7b0ca0c0bcb856}{operator!=} (const \hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter} \&other) const 
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ \hyperlink{class_c_picture_1_1_actor_iter_a7401edfaeb0f0fb2ff54df57d84a3777}{operator$\ast$} () const 
+\item 
+const \hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter} \& \hyperlink{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}{operator++} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Iterator that iterates over the actors 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}{}\index{C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}!Actor\+Iter@{Actor\+Iter}}
+\index{Actor\+Iter@{Actor\+Iter}!C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}}
+\subsubsection[{Actor\+Iter(\+C\+Picture $\ast$picture, int pos)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Picture\+::\+Actor\+Iter\+::\+Actor\+Iter (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Picture} $\ast$}]{picture, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em picture} & The picture we are iterating over \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_picture_1_1_actor_iter_a68cc04a07bd5766b1d7b0ca0c0bcb856}{}\index{C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}}
+\subsubsection[{operator"!=(const Actor\+Iter \&other) const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Picture\+::\+Actor\+Iter\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Actor\+Iter} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_picture_1_1_actor_iter_a68cc04a07bd5766b1d7b0ca0c0bcb856}
+Test for end of the iterator \begin{DoxyReturn}{Returns}
+True if we this position equals not equal to the other position 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_1_1_actor_iter_a7401edfaeb0f0fb2ff54df57d84a3777}{}\index{C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}}
+\subsubsection[{operator$\ast$() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Actor}$>$ C\+Picture\+::\+Actor\+Iter\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_picture_1_1_actor_iter_a7401edfaeb0f0fb2ff54df57d84a3777}
+Get value at current position \begin{DoxyReturn}{Returns}
+Value at m\+Pos in the collection 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}{}\index{C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}!operator++@{operator++}}
+\index{operator++@{operator++}!C\+Picture\+::\+Actor\+Iter@{C\+Picture\+::\+Actor\+Iter}}
+\subsubsection[{operator++()}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Actor\+Iter}\& C\+Picture\+::\+Actor\+Iter\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}
+Increment the iterator \begin{DoxyReturn}{Returns}
+Reference to this iterator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_picture_8h}{Picture.\+h}\end{DoxyCompactItemize}
